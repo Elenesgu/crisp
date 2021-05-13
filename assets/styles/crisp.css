@@ -1,12 +1,12 @@
 * {
     padding: 0;
     margin: 0;
-} 
+}
 /* Basic Typography */
 html, body {
     font-size: 1em;
     line-height: 1.65em;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Nanum Gothic", sans-serif;
     font-weight: 300;
     background: #fff;
     color: #444;
@@ -16,7 +16,7 @@ html {
 }
 body {
     padding: 2em 2.5em 1em 20em;
-}                  
+}
 /* Blocks */
 header {
     border-right: 1px #eee solid;
@@ -50,26 +50,25 @@ p, hr, h4, h5, h6 {
 }
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Bree Serif", serif;
     font-weight: 400 !important;
 }
 h1 {
-    font-size: 2.5em;
+    font-size: 1.8em;
     line-height: 1.1em;
     margin-top: 0.6em;
     margin-bottom: 0.6em;
 }
 h2 {
-    font-size:1.9em;
+    font-size:1.6em;
     line-height: 1.2em;
     margin-top: 0.7em;
-    margin-bottom: 0.7em;    
+    margin-bottom: 0.7em;
 }
 h3 {
     font-size:1.4em;
     line-height: 1.3em;
     margin-top: 0.8em;
-    margin-bottom: 0.8em;    
+    margin-bottom: 0.8em;
 }
 h4 {
     font-size:1.3em;
@@ -87,7 +86,7 @@ img, iframe {
 a {
     font-weight:700;
     text-decoration:none;
-    color: #5cc265; /* Change Link Color */
+    color: #0098b0; /* Change Link Color */
 }
 a:hover {
     text-decoration:underline;
@@ -104,12 +103,12 @@ blockquote {
     font-size: 1.3em;
 }
 hr{
-     border: 0;
+    border: 0;
     height: 1px;
     background: #eee;
 }
 ul, ol {
-    margin-left: 3em; 
+    margin-left: 3em;
 }
 code {
     font-size:1.4em;
@@ -125,7 +124,7 @@ pre {
     white-space: pre;
     white-space: -moz-pre-wrap;
     white-space: pre-wrap;
-    white-space: pre\9; 
+    white-space: pre\9;
 }
 input {
     font-size:1em;
@@ -139,7 +138,7 @@ header h1 {
 }
 header h1 a {
     color:#444;
-}  
+}
 header h1 a:hover {
     text-decoration:none;
 }
@@ -153,12 +152,14 @@ header #logo img {
 }
 #follow-icons {
     font-size: 0.7em;
-    margin-top: -0.7em;
+    margin-top: 1.5em;
     margin-bottom: 1.5em;
+    margin-left: -0.5em;
 }
 #follow-icons a {
     color: #ccc;
-}    
+    margin-left: 0.5em;
+}
 #follow-icons span {
     vertical-align:top;
     margin-left:-0.15em;
@@ -173,11 +174,13 @@ header h6 {
 }
 /* Posts */
 article span.post-stamp {
-    color:#888;     
+    color:#888;
 }
 h1.post-title {
-    margin-top:0.35em;
-    margin-bottom: 0.6em;
+	margin-top: 0.35em;
+	margin-bottom: 0.6em;
+	font-size: 2em;
+	border-bottom: black solid 1px;
 }
 h3.post-title {
     margin-top:0.4em;
@@ -195,12 +198,11 @@ h3.post-title {
 .taglist a {
     background-color:#ccc;
     color:#fff;
-    display: inline-block;   
+    display: inline-block;
     line-height: 1.5em;
     padding:0.3em 0.6em 0.3em 0.6em;
-    vertical-align:20%;  
+    vertical-align:20%;
     font-size:0.5em;
-    font-family: "Open Sans", sans-serif;
     font-weight: 700 !important;
     text-transform:uppercase;
     letter-spacing:0.05em;
@@ -226,19 +228,51 @@ footer a {
     font-weight:300;
     color:#888;
     text-decoration: underline;
-} 
+}
 footer a:hover {
     color:#444;
     text-decoration: none;
 }
+
+/* custom classes */
+
+.bibliography {
+    font-family: "Namum Myeongjo";
+}
+
+.list-unstyled {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+ul.tags-menu li {
+    margin-top: 9px;
+}
+ul.tags-menu li a {
+    font-size:13pt;
+    font-weight:300;
+    text-decoration: none;
+}
+ul.tags-menu li a i {
+    padding:5px 5px 2px 0px;
+}
+
+
 /* Large Screens */
 @media only screen and (min-width: 1281px) {
     html, body {
         font-size: 1.1em;
-    } 
+    }
+    .right_border_highlight:hover{
+        border-right:3px solid #428bca;
+        transition:all 0.1s ease;
+    }
+    .right_border_highlight a:hover {
+        text-decoration: none;
+    }
 }
 /* Small Screens */
-@media only screen and (max-width: 800px) { 
+@media only screen and (max-width: 800px) {
     body {
         padding:0;
     }
@@ -259,9 +293,16 @@ footer a:hover {
     footer {
         padding: 0 2.5em 2em 2.5em;
     }
+    ul.tags-menu li {
+        display: inline-block;
+        margin-top: 0;
+    }
+    ul.tags-menu li a i {
+        padding: 0;
+    }
 }
 /* Tiny Screens */
-@media only screen and (max-width: 320px) { 
+@media only screen and (max-width: 320px) {
     header {
         padding: 1.2em 1.2em 0.6em 1.2em;
     }
@@ -272,7 +313,7 @@ footer a:hover {
         padding: 0 1.5em 1.2em 1.5em;
     }
     ul, ol {
-        margin-left: 2em; 
+        margin-left: 2em;
     }
 }
 

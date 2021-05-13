@@ -1,0 +1,13 @@
+{{#get "tags"  limit="all"}}
+<div>
+    <ul class="list-unstyled tags-menu">
+        {{#foreach tags}}
+        <li>
+            <a href="{{url}}" title="{{name}}" class="tag tag-{{id}} {{slug}}">
+                <i class="el el-tag el-fw"></i> {{name}}
+            </a>
+        </li>
+        {{/foreach}}
+    </ul>
+</div>
+{{/get}}
